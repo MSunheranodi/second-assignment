@@ -1,0 +1,499 @@
+@import url("https://fonts.cdnfonts.com/css/miama");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: -apple-system, sans-serif;
+}
+:root {
+  --bg-color: #101010;
+  --snd-bg-color: #101010;
+  --text-color: #e6e6e6;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+section {
+  min-height: 100vh;
+  padding: 10rem 8% 2rem;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: #101010;
+}
+.logo {
+  font-size: 30px;
+  color: rgb(230, 83, 60);
+  margin: 0 30px;
+  line-height: 80px;
+}
+
+nav ul {
+  float: right;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 8px 20px;
+}
+nav ul li a.active {
+  padding: 9px 25px;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+#menu-icon {
+  font-size: 3.6rem;
+  color: #e6e6e6;
+  cursor: pointer;
+  display: none;
+}
+
+/*home section code */
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+section {
+  padding: 50px 0 50px 0;
+}
+.home {
+  display: flex;
+  width: 100%;
+}
+.home .max-width {
+  width: 100%;
+  display: flex;
+}
+.home .home-content {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.home h3 {
+  color: #e6e6e6;
+  margin-top: 6rem;
+  font-size: 5rem;
+  font-family: "philosopher", sans-serif;
+}
+.home p {
+  color: #727272;
+  margin-top: 1rem;
+  font-size: 12px;
+}
+.home .home-image {
+  width: 50%;
+}
+
+.shape-content {
+  font-family: "Miama", sans-serif;
+  font-weight: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 9rem;
+  margin: 0px 10px;
+  display: inline-block;
+ 
+}
+.home-content-left {
+  width: 50%;
+}
+.home-content-right {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.home-content-right img {
+  width: 265px;
+}
+.video-tutorial-box {
+  position: absolute;
+  /* background-color: #615959b4; */
+
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  left: 90px;
+  bottom: 50px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.video-tutorial-box h3 {
+  margin: 0px !important;
+  color: white;
+  font-size: 36px;
+}
+.video-tutorial-box p {
+  margin: 0px;
+  font-size: 16px;
+  color: #e6e6e6;
+}
+.red-dot {
+  width: 50px;
+  height: 50px;
+  background: red;
+  margin: 0px 10px;
+  border-radius: 100%;
+}
+.wokout-box{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    position: absolute;
+    top: 75px;
+  padding: 5px;
+
+}
+.wokout-box p{
+    margin: 0px;
+    color: #e6e6e6;
+
+}
+
+.wokout-box h3{
+    margin: 0px;
+    color: white;
+}
+.joinInButton{
+  text-decoration: none;
+  color: white;
+  margin-top: 1rem;
+  padding: 9px 25px;
+  background-color: rgb(196, 48, 48);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.downloadButton{
+  text-decoration: none;
+  color: white;
+  margin-top: 1rem;
+  padding: 9px 25px;
+ background-color: #101010;
+ border:1px solid white ;
+ border-radius: 50px;
+ cursor: pointer;
+ transition: 0.5 ease 0s;
+}
+
+
+                           /*services section code */
+
+
+.service{
+  background: var(--snd-bg-color) ;
+}
+.heading{
+  text-align: center;
+  font-size: 50px;   
+}
+.text-light-gray{
+  text-align: center;
+  color: #727272;
+  margin-top: 1rem;
+  font-size: 15px;
+
+}
+
+.service-box{
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.service .heading{
+  margin-bottom: 1rem;
+}
+.service-box img {
+  width: 15rem;
+  border-radius: 50%;
+  border: 3px solid rgba(27, 16, 12, 0.171);
+
+}
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:1rem;
+}
+.head{
+  font-size: 25px; 
+}
+.paragraph-content{
+  color: #727272;
+  font-size: 15px;
+  
+}
+.service-item{
+  min-height: 450px;
+  max-width: 450px;
+ margin:0 0rem;
+ padding:9px 25px;
+ cursor: pointer;
+ display: flex;
+ flex-direction: column;
+ justify-content:center;
+ align-items: center;
+ gap: 1rem;
+}
+       
+
+                         /*Run EXtra Mile Easy section code*/
+
+.about{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+}
+.aboutus{
+  width: 950px;
+  height: 320px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background-color:  #222222fa;
+  padding: 40px;
+  border-radius: 15px;
+}
+.about-content h3{
+  font-size: 50px;
+  
+}
+.about-content p{
+  color: #727272;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.about-img img {
+  width: 90%;
+ height: 80%;
+  float: right;
+  border-radius:10px;
+margin: 20px;
+object-fit: cover;
+transform: scale(1);
+}
+.c-btn{
+  margin-top: 1rem;
+  padding: 9px 25px;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+ 
+}
+ 
+
+                  /*BMI CALCULATOR CODE*/
+.bmi h2{
+  text-align: center;
+font-size: 50px;
+}
+.bmi p{
+        text-align: center;
+        font-size: 12px;
+        color: #727272;
+        margin-top: 0.5rem;
+      }
+         .bmi-content{
+          display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+         }     
+         .bmi-box{
+          width: 1440px;
+          height: 500px;
+          background-color:  #222222fa;
+        }     
+        table , tr, td, th{
+          width: 25%;
+          height: 30%;
+          margin-top: 2rem;
+        border:1px solid var(--snd-bg-color);
+          border-collapse: collapse;
+
+        }
+        
+
+
+                                                  /*MEET OUR TEAM */
+         
+          .services-info h3{
+            color: #e6e6e6;
+            text-align: center;
+            font-size: 50px;
+          
+           }
+           .services-info p{
+            text-align: center;
+            font-size: 12px;
+            color: #727272;
+            margin-top: 0.5rem;
+           }
+           
+        .main-div{
+          display: grid;
+          place-items: center;
+          height: 100%;
+          width: 100%;
+          margin-top: 1rem;
+       }
+       .img-1, .img-2, .img-3, .img-4, .img-5, .img-6{
+          background-image: url("images");
+          height: 220px;
+          width: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          color: white;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          border-radius: 10px;
+          background-size:cover ;
+       }
+ 
+       .img-1{
+      background-image:url('images/trainer1.png');  
+      }
+
+       .img-2{
+          background-image: url('images/trainer2.png');
+       }
+       .img-3{
+          background-image: url('images/trainer3.png');
+       }
+       .img-4{
+          background-image: url('images/trainer4.png');
+       }
+       .img-5{
+          background-image: url('images/trainer5.png');
+       }
+       .img-6{
+          background-image: url('images/trainer6.png');
+       }
+ 
+       
+ 
+       .img .bold{
+          font-weight: 700;
+          padding-bottom: 0.3em;
+          font-size: 1.3em;
+          padding-left: 0.8em;
+       }
+ 
+       .img .text{
+         padding-left: 1.2em; 
+         padding-bottom: 1em;
+         color: rgb(215, 213, 213);
+         font-size: 0.9em;
+       }
+ 
+       .main-container{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          flex-wrap: wrap;
+          border-radius: 1em;
+          background-color: rgb(147, 145, 145);
+       }
+ 
+       .container-1,.container-2{
+          display: flex; 
+          width: 100%;
+          gap: 10px;
+          flex-wrap: wrap;
+       }
+       .container-1{
+          padding-top: 1em;
+          padding-left:1em ;
+          padding-right: 1em;
+       }
+ 
+       .container-2{
+          padding-bottom: 1em;
+          padding-left:1em ;
+          padding-right: 1em;
+       }
+                               /*FOOTER RELATED CODE */
+                               
+
+
+ .footer{
+  width: 1440px;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color:  #222222fa;
+  padding: 55px;
+  margin-top: 5px;
+ }
+ .text h2{
+  margin-bottom: 2rem;
+  font-size: 30px;
+  font-weight: 500;
+ }
+ .footer-color{
+  font-size: 40px;
+  color: red;
+ }
+ 
+ .text p{
+  display: block;
+  margin-bottom: 1.5rem;
+  color: #727272;
+  font-size: 20px;
+  transition: 0.3s;
+
+ }
+ .all-container{
+  width: 1440px;
+  height: 100px;
+  background-color:  #222222fa;
+ }
+ .footer__bar{
+  text-align: center;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  font-size: 15px;
+  color:#727272;
+ }
